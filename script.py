@@ -1,14 +1,18 @@
-def reverse_string(s):
+def is_leap_year(year):
     """
-    Reverses a given string.
+    Determines whether the specified year is a leap year.
+    
+    Args:
+    year (int): The year to be checked.
 
-    :param s: The string to be reversed.
-    :return: The reversed string.
+    Returns:
+    bool: True if the year is a leap year, False otherwise.
     """
+    # A year is a leap year if it is divisible by 4.
+    # However, if the year is also divisible by 100, it is not a leap year unless it is divisible by 400.
     pass
 
-# Sample Tests
-print("hello =>", reverse_string("hello"))  # Expected Output: olleh
-print("codedamn =>", reverse_string("codedamn"))  # Expected Output: nmadedoc
-print("racecar =>", reverse_string("racecar"))  # Expected Output: racecar
-print("12345 =>", reverse_string("12345"))  # Expected Output: 54321
+# Example function calls
+print("2000 is a leap year:", is_leap_year(2000))  # Expected output: True
+print("1997 is a leap year:", is_leap_year(1997))  # Expected output: False
+print("2024 is a leap year:", is_leap_year(2024))  # Expected output: True
