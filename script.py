@@ -1,19 +1,16 @@
-def simple_interest(principal, rate, time):
+def calculate_bmi(height, weight):
     """
-    Calculate the simple interest for given principal, rate, and time.
+    Calculate the Body Mass Index (BMI) and determine the BMI category.
     
-    Args:
-    principal (float): The initial amount of money.
-    rate (float): The interest rate in percentage.
-    time (float): The time period in years.
-
-    Returns:
-    float: The simple interest calculated, rounded to two decimal places.
+    :param height: Height in centimeters.
+    :param weight: Weight in kilograms.
+    :return: A tuple containing the BMI value (rounded to two decimal places) and the BMI category.
     """
-    
     pass
+    
 
 # Example function calls
-print("Example 1:", simple_interest(23000, 4, 7))  # Expected output: 6440.0
-print("Example 2:", simple_interest(10000, 1, 10)) # Expected output: 1000.0
-print("Example 3:", simple_interest(100000, 5, 4)) # Expected output: 20000.0
+print(calculate_bmi(155, 43.3))  # Expected: (18.02, "underweight")
+print(calculate_bmi(170, 62.2))  # Expected: (21.52, "healthy")
+print(calculate_bmi(150, 77.1))  # Expected: (34.27, "obese")
+print(calculate_bmi(189, 101.2)) # Expected: (28.37, "overweight")
