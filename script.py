@@ -1,18 +1,19 @@
-def is_leap_year(year):
+def simple_interest(principal, rate, time):
     """
-    Determines whether the specified year is a leap year.
+    Calculate the simple interest for given principal, rate, and time.
     
     Args:
-    year (int): The year to be checked.
+    principal (float): The initial amount of money.
+    rate (float): The interest rate in percentage.
+    time (float): The time period in years.
 
     Returns:
-    bool: True if the year is a leap year, False otherwise.
+    float: The simple interest calculated, rounded to two decimal places.
     """
-    # A year is a leap year if it is divisible by 4.
-    # However, if the year is also divisible by 100, it is not a leap year unless it is divisible by 400.
+    
     pass
 
 # Example function calls
-print("2000 is a leap year:", is_leap_year(2000))  # Expected output: True
-print("1997 is a leap year:", is_leap_year(1997))  # Expected output: False
-print("2024 is a leap year:", is_leap_year(2024))  # Expected output: True
+print("Example 1:", simple_interest(23000, 4, 7))  # Expected output: 6440.0
+print("Example 2:", simple_interest(10000, 1, 10)) # Expected output: 1000.0
+print("Example 3:", simple_interest(100000, 5, 4)) # Expected output: 20000.0
