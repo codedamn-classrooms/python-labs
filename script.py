@@ -1,21 +1,18 @@
-def convert_distance(distance, unit):
+def count_vowels(input_string):
     """
-    Converts a distance between kilometers and meters.
+    Counts the occurrences of each vowel in the given string.
 
-    Parameters:
-    - distance (float): The distance to be converted.
-    - unit (str): The unit of the distance ('km' or 'mtr').
+    Args:
+    input_string (str): The string in which vowels are to be counted.
 
     Returns:
-    - tuple: A tuple containing the converted distance and its unit.
+    dict: A dictionary with vowels as keys and their counts as values.
     """
     pass
 
-# Example function calls
-print(convert_distance(1.5, "km"))  # Expected output: (1500.0, "mtr")
-print(convert_distance(3000, "mtr"))  # Expected output: (3.0, "km")
-print(convert_distance(0, "mtr"))  # Expected output: (0.0, "km")
+# Example function calls and printing their outputs
+if __name__ == "__main__":
+    example1 = print("Hello World =>",count_vowels("Hello World"))
+    example2 = print("Python Programming =>",count_vowels("Python Programming"))
+    example3 = print("Myths =>",count_vowels("Myths"))  # String with no vowels
 
-# NOTE: If you're testing an error case, make sure to comment the function call before executing the tests
-# Sample Error Case 
-# print(convert_distance(-2, "mtr"))  # Expected output: ValueError
