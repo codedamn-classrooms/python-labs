@@ -1,18 +1,17 @@
-def count_vowels(input_string):
+def convert_binary(binary_string):
     """
-    Counts the occurrences of each vowel in the given string.
+    Converts a binary string to its decimal equivalent.
 
     Args:
-    input_string (str): The string in which vowels are to be counted.
+    binary_string (str): A binary string in the format '0bXXXX'.
 
     Returns:
-    dict: A dictionary with vowels as keys and their counts as values.
+    int: Decimal equivalent of the binary string.
     """
     pass
 
-# Example function calls and printing their outputs
-if __name__ == "__main__":
-    example1 = print("Hello World =>",count_vowels("Hello World"))
-    example2 = print("Python Programming =>",count_vowels("Python Programming"))
-    example3 = print("Myths =>",count_vowels("Myths"))  # String with no vowels
+# Example function calls and output printing
+print("Decimal of '0b101':", convert_binary('0b101'))        # Expected Output: 5
+print("Decimal of '0b0':", convert_binary('0b0'))            # Expected Output: 0
+print("Decimal of '0b11101010':", convert_binary('0b11101010'))  # Expected Output: 234
 
