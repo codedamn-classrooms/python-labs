@@ -22,4 +22,4 @@ if __name__ == "__main__":
         print(is_pythagorean_triplet([7, 24, 25]))    # A larger Pythagorean triplet, should return True
         print(is_pythagorean_triplet([9, 40, 41]))    # Another Pythagorean triplet, should return True
 
-        print(is_pythagorean_triplet('random value')) # Value Error 
+        print(is_pythagorean_triplet([1,2])) # Value Error 
