@@ -5,7 +5,7 @@ def factorial(n):
     # Base case: if n is 1, return 1 (since 1! = 1)
     pass
 
-# Test cases
+# Sample Tests
 print("Factorial of 5:", factorial(5))   # Expected: 120
 print("Factorial of 10:", factorial(10))  # Expected: 3628800
 print("Factorial of 8:", factorial(8))   # Expected: 40320
