@@ -1,8 +1,25 @@
-# define the function parameters
-def generate_password():
+def is_pythagorean_triplet(lst):
+    """
+    Checks if a list of three numbers can form a Pythagorean triplet.
+    
+    Parameters:
+    lst (list): A list of three numbers.
+    
+    Returns:
+    bool: True if the numbers form a Pythagorean triplet, False otherwise.
+    
+    Raises:
+    ValueError: If the input list does not contain exactly three numbers.
+    """
     pass
 
-# Test cases
-print(generate_password(length=8, letters_count=3, numbers_count=3, symbols_count=2))
-print(generate_password(length=6))
-print(generate_password(length=10, letters_count=4, numbers_count=3, symbols_count=3))
+# Example function calls and printing the output
+if __name__ == "__main__":
+        print(is_pythagorean_triplet([3, 4, 5]))      # Should return True
+        print(is_pythagorean_triplet([10, 5, 24]))    # Should return False
+        print(is_pythagorean_triplet([5, 3, 4]))      # Permutation of the first example, should return True
+        print(is_pythagorean_triplet([1, 1, 1]))       # Not a Pythagorean triplet, should return False
+        print(is_pythagorean_triplet([7, 24, 25]))    # A larger Pythagorean triplet, should return True
+        print(is_pythagorean_triplet([9, 40, 41]))    # Another Pythagorean triplet, should return True
+
+        print(is_pythagorean_triplet('random value')) # Value Error 
